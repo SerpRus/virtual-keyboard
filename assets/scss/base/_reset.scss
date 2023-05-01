@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+a {
+    display: inline-flex;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+button {
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+}

@@ -1,0 +1,87 @@
+.key {
+    @include text-prop(15px, 24px, 600);
+
+    position: relative;
+
+    width: rem(40);
+    height: rem(40);
+
+    transition: 0.1s linear;
+
+    color: $color-key;
+    border-top: rem(2) solid $color-emperor;
+    border-right: rem(2) solid $color-black;
+    border-bottom: rem(2) solid $color-black;
+    border-left: rem(2) solid $color-emperor;
+    border-radius: rem(5);
+    background: $gradient-key-btn;
+    box-shadow: $shadow-key;
+
+    &--small {
+        width: rem(44);
+    }
+
+    &--medium {
+        width: rem(50);
+    }
+
+    &--average {
+        width: rem(63);
+    }
+
+    &--big {
+        width: rem(86);
+    }
+
+    &--very-big {
+        width: rem(100);
+    }
+
+    &--large {
+        width: rem(146);
+    }
+
+    &--very-large {
+        width: rem(284);
+    }
+
+    &__text {
+        &--caps {
+            display: none;
+        }
+
+        &--shift {
+            display: none;
+        }
+
+        &--caps-shift {
+            display: none;
+        }
+
+        &--ru {
+            display: none;
+        }
+
+        &--ru-caps {
+            display: none;
+        }
+
+        &--ru-shift {
+            display: none;
+        }
+
+        &--ru-caps-shift {
+            display: none;
+        }
+    }
+
+    &.pushed {
+        box-shadow: none;
+
+        transform: translate(3px, 3px);
+
+        border-left: rem(2) solid $color-dusty-gray;
+        border-top: rem(2) solid $color-dusty-gray;
+        background: $color-silver;
+    }
+}

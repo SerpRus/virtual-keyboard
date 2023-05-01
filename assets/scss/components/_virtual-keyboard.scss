@@ -1,0 +1,145 @@
+.virtual-keyboard {
+    &__textarea {
+        @include text-prop(20px, 28px);
+
+        padding: rem(16);
+
+        resize: none;
+
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__keys-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: rem(704);
+        margin: rem(-5) rem(-3);
+    }
+
+    &__key {
+        margin: rem(5) rem(3);
+    }
+
+    &.caps-lock {
+        &.shift {
+            & .key {
+                &__text {
+                    &--caps {
+                        display: none;
+                    }
+
+                    &--shift {
+                        display: none;
+                    }
+
+                    &--caps-shift {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        & .key {
+            &__text {
+                display: none;
+
+                &--caps {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.shift {
+        & .key {
+            &__text {
+                display: none;
+
+                &--shift {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.ru {
+        & .key {
+            &__text {
+                display: none;
+
+                &--ru {
+                    display: block;
+                }
+            }
+        }
+
+        &.caps-lock {
+            & .key {
+                &__text {
+                    &--caps {
+                        display: none;
+                    }
+
+                    &--ru {
+                        display: none;
+                    }
+
+                    &--ru-caps {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &.shift {
+            &.caps-lock {
+                & .key {
+                    &__text {
+                        &--caps {
+                            display: none;
+                        }
+
+                        &--shift {
+                            display: none;
+                        }
+
+                        &--caps-shift {
+                            display: none;
+                        }
+
+                        &--ru-caps {
+                            display: none;
+                        }
+
+                        &--ru-shift {
+                            display: none;
+                        }
+
+                        &--ru-caps-shift {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            & .key {
+                &__text {
+                    &--shift {
+                        display: none;
+                    }
+
+                    &--ru {
+                        display: none;
+                    }
+
+                    &--ru-shift {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
