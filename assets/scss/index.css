@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+button[disabled] {
+  cursor: default;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+.key {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.6;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.1s linear;
+  color: #000;
+  border-top: 0.125rem solid #545454;
+  border-right: 0.125rem solid #000;
+  border-bottom: 0.125rem solid #000;
+  border-left: 0.125rem solid #545454;
+  border-radius: 0.3125rem;
+  background: linear-gradient(#fff, #e5e5e5);
+  box-shadow: 1px 2px 3px #000;
+}
+.key--small {
+  width: 2.75rem;
+}
+.key--medium {
+  width: 3.125rem;
+}
+.key--average {
+  width: 3.9375rem;
+}
+.key--big {
+  width: 5.375rem;
+}
+.key--very-big {
+  width: 6.25rem;
+}
+.key--large {
+  width: 9.125rem;
+}
+.key--very-large {
+  width: 17.75rem;
+}
+.key__text--caps {
+  display: none;
+}
+.key__text--shift {
+  display: none;
+}
+.key__text--caps-shift {
+  display: none;
+}
+.key__text--ru {
+  display: none;
+}
+.key__text--ru-caps {
+  display: none;
+}
+.key__text--ru-shift {
+  display: none;
+}
+.key__text--ru-caps-shift {
+  display: none;
+}
+.key.pushed {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+  border-left: 0.125rem solid #999;
+  border-top: 0.125rem solid #999;
+  background: #ccc;
+}
+
+.textarea {
+  width: 100%;
+  height: 12.5rem;
+}
+
+.title:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.header:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.virtual-keyboard__textarea {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  padding: 1rem;
+  resize: none;
+}
+.virtual-keyboard__textarea:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.virtual-keyboard__keys-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 44rem;
+  margin: -0.3125rem -0.1875rem;
+}
+.virtual-keyboard__key {
+  margin: 0.3125rem 0.1875rem;
+}
+.virtual-keyboard.caps-lock.shift .key__text--caps {
+  display: none;
+}
+.virtual-keyboard.caps-lock.shift .key__text--shift {
+  display: none;
+}
+.virtual-keyboard.caps-lock.shift .key__text--caps-shift {
+  display: block;
+}
+.virtual-keyboard.caps-lock .key__text {
+  display: none;
+}
+.virtual-keyboard.caps-lock .key__text--caps {
+  display: block;
+}
+.virtual-keyboard.shift .key__text {
+  display: none;
+}
+.virtual-keyboard.shift .key__text--shift {
+  display: block;
+}
+.virtual-keyboard.ru .key__text {
+  display: none;
+}
+.virtual-keyboard.ru .key__text--ru {
+  display: block;
+}
+.virtual-keyboard.ru.caps-lock .key__text--caps {
+  display: none;
+}
+.virtual-keyboard.ru.caps-lock .key__text--ru {
+  display: none;
+}
+.virtual-keyboard.ru.caps-lock .key__text--ru-caps {
+  display: block;
+}
+.virtual-keyboard.ru.shift.caps-lock .key__text--caps {
+  display: none;
+}
+.virtual-keyboard.ru.shift.caps-lock .key__text--shift {
+  display: none;
+}
+.virtual-keyboard.ru.shift.caps-lock .key__text--caps-shift {
+  display: none;
+}
+.virtual-keyboard.ru.shift.caps-lock .key__text--ru-caps {
+  display: none;
+}
+.virtual-keyboard.ru.shift.caps-lock .key__text--ru-shift {
+  display: none;
+}
+.virtual-keyboard.ru.shift.caps-lock .key__text--ru-caps-shift {
+  display: block;
+}
+.virtual-keyboard.ru.shift .key__text--shift {
+  display: none;
+}
+.virtual-keyboard.ru.shift .key__text--ru {
+  display: none;
+}
+.virtual-keyboard.ru.shift .key__text--ru-shift {
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map */

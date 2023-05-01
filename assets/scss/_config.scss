@@ -1,0 +1,56 @@
+$screen-width: (
+    mobileMax: 767,
+    tablet: 768,
+    desktop: 1024,
+    desktopBigMin: 1279,
+    desktopBig: 1280,
+    desktopLarge: 1366,
+);
+
+// Fonts
+$font-family-arial: Arial, sans-serif;
+
+// Dynamic fonts
+$font-family-key-text: $font-family-arial;
+
+
+//Colors
+$color-black: #000;
+$color-white: #fff;
+$color-mercury: #e5e5e5;
+$color-emperor: #545454;
+$color-dusty-gray: #999;
+$color-silver: #ccc;
+
+// Dynamic colors
+$color-key: $color-black;
+
+
+//Gaps
+//$gap-container-small: 16px;
+
+// Dynamic gaps
+
+
+//Transitions
+//$transition-default: 0.3s linear;
+
+// Dynamic transitions
+
+
+//Sizes
+//$size-icon-button: 52px;
+
+// Dynamic sizes
+
+
+// Gradients
+$gradient-key-btn: linear-gradient($color-white, $color-mercury);
+
+// Dynamic gradients
+
+
+// Shadows
+$shadow-key: 1px 2px 3px $color-black;
+
+// Dynamic shadows

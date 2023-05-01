@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    &[disabled] {
+        cursor: default;
+    }
+}
+
+svg {
+    flex-shrink: 0;
+}

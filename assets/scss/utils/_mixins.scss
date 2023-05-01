@@ -1,0 +1,58 @@
+@mixin mediaQuery($bpt) {
+    @if (map_has_key($screen-width, $bpt)) {
+        @media (min-width: #{map_get($screen-width, $bpt)}px) {
+            @content;
+        }
+    }
+
+    @else {
+        @error 'No breakpoint named #{$bpt}';
+    }
+}
+
+@mixin mediaQueryMax($bpt) {
+    $maxBpt: calc(#{$bpt} - 1);
+
+    @if (map_has_key($screen-width, $bpt)) {
+        @media (max-width: #{map_get($screen-width, $bpt)}px) {
+            @content;
+        }
+    }
+
+    @else {
+        @error 'No breakpoint named #{$maxBpt}';
+    }
+}
+
+@mixin mediaQueryTabletOnly {
+    @media (min-width: 768px) and (max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin text-prop($font-size: null, $line-height: null, $font-weight: null, $font-family: null, $font-style: null) {
+    @if $font-family {
+        font-family: $font-family;
+    }
+    @if $font-size {
+        font-size: rem($font-size);
+    }
+    @if $font-weight {
+        font-weight: $font-weight;
+    }
+    @if $font-style {
+        font-style: $font-style;
+    }
+    @if $font-size and $line-height {
+        line-height: ($line-height / $font-size);
+    }
+}
+
+@mixin stretch() {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
